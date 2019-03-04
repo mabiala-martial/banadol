@@ -1,54 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<title>Site BANADOL</title>
+		<title>Page d'Accueil du Site BANADOL</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="https://www.fontsquirrel.com/css?family=Quadrat-Serial">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
 	</head>
 	<body>
 		<div class="border_pagne"></div>
-		<div id="container">
-			<main>
-				<img src="../images/logo.png" class="logo">
-					<div id="reseaux_sociaux">
-						<a><img src="../images/youtube.png" alt="youtube" class="youtube"></a>
-						<a><img src="../images/facebook.png" alt="facebook" class="fecebook"></a>
-						<a><img src="../images/twitter.png" alt="twitter" class="twitter"></a>
+			<header>
+				<div id="container">
+					<div id="bloc_header">
+						<div><img src="images/logo.png" class="logo_desktop"></div>
+						<div><img src="images/logobanadol.gif" class="logo_mobile"></div>
+						<div id="reseaux_sociaux">
+							<a href="" id="youtube"></a>
+							<a href="" id="facebook"></a>
+							<a href="" id="twitter"></a>
+							<div id="recherche">
+								<input class="champs_recherche" type="text" placeholder="Recherche">
+								<button class="recherche" type=""></button>	
+							</div>
+						</div>
 					</div>
-				<div>
-					<input id="champs_recherche" type="Recherche">
-					<img src="../images/search.png" class="recherche">	
-				</div>	
-						
-					<div>	
-						
-					</div>	
-					<nav>
+				</div>
+				<a href="" class="menu">Menu</a>		
+				<nav>
+					<div id="container_nav">
 						<ul>
-							<li>ACCUEIL</li>
-							<li>MISSIONS</li>
-							<li>A PROPOS</li>
-							<li>S'INSCRIRE</li>
-							<li>NOUS CONTACTER</li>
-							<li>NOUS SOUTENIR</li>
-							<li>PARTENAIRES</li>
-							<li>ACTUALITES</li>
+							<li><a class="active" href="">ACCUEIL</a></li>
+							<li><a href="">MISSIONS</a></li>
+							<li><a href="">A PROPOS</a></li>
+							<li><a href="">S'INSCRIRE</a></li>
+							<li><a href="">NOUS CONTACTER</a></li>
+							<li><a href="">NOUS SOUTENIR</a></li>
+							<li><a href="">PARTENAIRES</a></li>
+							<li><a href="">ACTUALITES</a></li>
 						</ul>
-					</nav>
-					<img src="../images/arbre.jpg">
-				</main>				
+					</div>
+				</nav>
+					<div id="bloc_arbre">
+						<div id="arbre"></div>
+						<div class="image_pagne"></div>
+					</div>
 			</header>
-				<section>
-					<main>
-						<article></article>
-						<article></article>
-						<article></article>
-					</main>
-					
-				</section>
-				<footer></footer>
-		</div>	
-	</body>
+				<main id="bloc_missions">
+					<div id="container_missions">
+						<div id="welcome">
+							<h2>BIENVENUE SUR LE SITE DE</h2>
+							<h1>BANA DOL</h1>
+							<div class="soulignement"></div>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. 
+							</p>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. 
+							</p>
+							<a href="" class="btn_banadol" title="BOUTON">En Savoir plus</a>
+						</div>
+						<h3>NOS MISSIONS</h3>
+						<div id="backmission">
+							<ul>
+								<li class="backmission">
+									<a href="">
+										<img src="images/ico_developpement.png" class="ico_dev">
+										<p>PARTICPER AU DEVELOPPEMENT DE DOLISIE</p>
+									</a>
+								</li>
+								<li class="backmission">
+									<a href="">
+										<img src="images/ico_hopital.png" class="ico_dev">
+										<p>LUTTER POUR L'EDUCATION ET LA SANTE</p>
+									</a>
+								</li>
+								<li class="backmission">
+									<a href="">
+										<img src="images/ico_cadeau.png" class="ico_dev">
+										<p>APPORTER UNE AIDE MULTIFORME A LA JEUNESSE</p>
+									</a>
+								</li>
+								<li class="backmission">
+									<a href="">
+										<img src="images/ico_social.png" class="ico_dev">
+										<p>ENTRAIDE ENTRE LES MEMBRES</p>
+									</a>
+								</li>
+							</ul>
+							<a href="" class="btn_missions" title="BOUTON">Découvrez nos Missions</a>
+						</div>
+					</div>
+					<section id="container_art">
+						<h3>NOS ACTUALITES</h3>
+						<div class="container_art">
+							<article>
+								<div class="img_art1"></div>
+								<h4>13 mars 2019</h4>
+								<span>TITRE DE L'ACTIVITE DE L'ASSOCIATION</span>
+								<div class="tiret_bleu"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+								<a href="" class="btn_articles" title="BOUTON">Lire la suite</a>
+							</article>
+							<article>
+								<div class="img_art2"></div>
+								<h4>13 mars 2019</h4>
+								<span>TITRE DE L'ACTIVITE DE L'ASSOCIATION</span>
+								<div class="tiret_bleu"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+								<a href="" class="btn_articles" title="BOUTON">Lire la suite</a>
+							</article>
+							<article>
+								<div class="img_art3"></div>
+								<h4>13 mars 2019</h4>
+								<span>TITRE DE L'ACTIVITE DE L'ASSOCIATION</span>
+								<div class="tiret_bleu"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+								<a href="" class="btn_articles" title="BOUTON">Lire la suite</a>
+							</article>
+						</div>
+					</section>
+				</main>	
+			<footer>
+				<div class="image_pagne"></div>
+					<div class="marron_clair">
+						<div id="container_bas">
+							<img src="images/logo_blason.png" alt="logo_footer" class="logo_bas">
+							<div id="reseaux_search">
+								<div id="reseaux_bas">
+									<a class ="youtube"></a>
+									<a class ="facebook"></a>
+									<a class ="twitter"></a>
+								</div>
+								<div id="recherche_bas">
+									<input class="champs_recherche1" type="text" placeholder="Recherche">
+									<button class="recherche_bas" type=""></button>
+								</div>		
+							</div>	
+						</div>
+					</div>
+				<div class="marron_fonce">
+					<div id="bas_page">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<span>BANADOL-Tous droits lorem th 	2009</span>
+						<ul>
+							<li>Mentions légales</li>
+							<li>Polique de confidentialité</li>
+							<li>Contact</li>
+						</ul>
+						</div>
+					</div>
+					<div class="border_bas"></div>
+				</div>
+            </footer>
+            <script src="jquery-3.3.1.min.js"></script>
+			<script src="js/script.js"></script>
+		</body>	
 </html>

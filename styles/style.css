@@ -28,6 +28,7 @@ a.menu{
 }
 header{
 	background-color: #dad4c2;
+	height: 490px;
 }
 .logo_desktop{
 	height:100px;
@@ -98,6 +99,8 @@ nav{
 	background-color: #7b6856;
 	height: 40px;
 	border-bottom: 5px solid #645445; 
+	position: relative;
+	z-index: 1;
 }
 #container_nav{
 	max-width: 1200px;
@@ -166,7 +169,6 @@ nav li{
 	position: relative;
 	justify-content: center;
 }
-
 #welcome h1{
 	font-family: Quadrat;
 	font-size: 26px;
@@ -294,7 +296,6 @@ li.backmission:hover{
 }
 .btn_missions:hover{
 	background: #c94a18;
-	
 }
 #container_art{
 	width: 100%;
@@ -415,7 +416,7 @@ article p{
 	margin:0 auto;
 	margin-top: 30px;
 }
-article .btn_articles{
+/*article .btn_articles{
 	margin-top: 35px;
 	font-family: Quadrat;
 	display: inline-block;
@@ -426,10 +427,9 @@ article .btn_articles{
 	padding: 15px;
 	text-decoration: none;
 	transition: 1s;
-}
+}*/
 article .btn_articles:hover{
 	background: #00538e;
-	
 }
 .border_bas{
 	height: 5px;
@@ -627,6 +627,7 @@ a.menu{
 	text-decoration:none;
 	color: #fff;
 	background-color: #7b6856;
+	z-index: 1;
 }
 a.menu:hover{
 	background-color: #c94a18;
@@ -692,11 +693,11 @@ a.menu:hover{
 #container_art{
 	height: 100%;
 }
-#container_art h3{
+/*#container_art h3{
 	font-size: 22px;
 	margin: 20px;
 	bottom: -30px;
-}
+}*/
 #container_art h3::before{
 	width: 70px;
 }
@@ -708,10 +709,10 @@ a.menu:hover{
 	margin-left: 28px;
 	margin-bottom: 40px;
 }
-article{
+/*article{
 	width: 30%px;
 	margin-top:45px;
-}
+}*/
 article p{
 	width: 310px;
 	margin-top: 10px;
@@ -798,6 +799,12 @@ button.recherche_bas{
 	width: 100%;
 	background-color: #dad4c2;
 }
+.section_infos1,.section_infos2,.section_infos3,.section_infos4{
+	display: none;
+}
+.triangle{
+	display: none;
+}
 #ville_dol{
 	width: 100%;
 	height: 600px;
@@ -807,7 +814,6 @@ button.recherche_bas{
 	background-repeat: no-repeat;
 	position: relative;
 	bottom: 150px;
-	
 }
 #ville_dol .image_pagne{
 	background-image: url('../images/patternpagne.jpg');
@@ -861,13 +867,17 @@ button.recherche_bas{
 	border-right: none;
 	border-left: none;
 }
-#missions_banadol{
-	background-color: #dad4c2;
-	width: 100%;
-	height: 240px;
-	position: relative;
-	bottom: 267px;
-}
+.triangle{
+	display:none;
+	height: 0;
+	width: 0;
+	border-bottom: 25px solid #fff;
+	border-left: 25px solid transparent;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 107px;
+    left: 150px;
+}	
 #missions_banadol ul{
 	display: flex;
 	justify-content: space-between;
@@ -877,66 +887,100 @@ button.recherche_bas{
 	list-style: none;
 	margin: auto;
 	position: relative;
-	bottom: 90px;
+	bottom: 73px;
+	padding-left: 0;
 }
 #missions_banadol li{
 	font-family: Alef;
+	position:relative;
 }
-
-#missions_banadol li:nth-of-type(1){
+li.active-color{
 	background-color: #fff;
-	margin-left: -40px;
-}
-.triangle{
-	display: inline-block;
-	height: 0;
-	width:0;
-	border-top:150px solid red;
-	border-left:150 solid transparent;
-}
-.triangle::after{
-	content:'';
 	
+}
+li.active-color .triangle{
+	display: inline-block;
 }
 .missions_banadol a{
 	display: flex;
 	text-decoration: none;
 	height: 175px;
+	margin-top: 23px;
 }
 .missions_banadol .ico_dev{
 	margin-left: 15px;
+	margin-top: -5px;
 }
 .missions_banadol p{
 	font-family: Quadrat;	
 	margin-left: 10px;
 	width: 145px;
-	margin-top: 30px;
+	margin-top: 8px;
 }
-.bloc_elephan>h2{
+.bloc_elephan{
+	display: none;
+	margin-top: 20px;
+}
+.bloc_lion{
+	display: flex;
+}
+.bloc_leopard{
+	display: flex;
+}
+.bloc_chien{
+	display: flex;
+}
+.mission_infos div h2{
 	margin-top: 40px;
 	display: flex;
 	color: #c94a18;
 }
-.bloc_elephan>p{
-	display: flex;
+.mission_infos>div>p{
 	font-family: Alef;
-	width: 600px;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 14px;
 }
-#elephan{
-	display: flex;
-	width: 1200px;
+#container_miss{
 	justify-content: space-between;
 	margin: auto;
 	margin-top:-90px;
 	align-items: center;
+	position: relative;
+	z-index: 0;
+	width: 1200px;
 }
-.photo{
-	background-image: url('../images/elephan.jpg');
+.image_missions{
 	background-size: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
+	width: 37%;
 	height: 400px;
+	background-repeat: no-repeat;
 	margin-top: 45px;
+}
+.mission_infos{
+	display: flex;
+	justify-content: space-between;
+}
+.mission_active{
+	display: flex;
+}
+.mission_inactive{
+	display: none;
+}
+.infos_text{
+	width: 60%;
+}
+#elephan{
+	background-image: url('../images/elephan.jpg');
+}	
+#lion{
+	background-image: url('../images/lion.jpg');
+}	
+#leopard{
+	background-image: url('../images/leopard.jpg');
+}	
+#chien{
+	background-image: url('../images/chien.jpg');
 }
 article{
 	width: 30%;
@@ -946,32 +990,22 @@ article{
 	border-radius: 15px;
 	margin-top: 60px;
 }
-div.img_art1{
-	background-image: url('../images/picture3.png');
+div.img_art1,div.img_art2,div.img_art3{
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 33%;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+}
+div.img_art1{
+	background-image: url('../images/picture3.png');
 }
 div.img_art2{
 	background-image: url('../images/ma photo.jpeg');
-	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 33%;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
 }
 div.img_art3{
 	background-image: url('../images/picture3.png');
-	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 33%;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
 }
 article img{
 	width: 100%;
@@ -1027,4 +1061,126 @@ article .btn_articles{
 article .btn_articles:hover{
 	background: #00538e;
 	
+}
+@media screen and (max-width: 640px){
+	#body_missions{
+		width: 100%;
+		overflow-x: hidden;
+	}
+	header{
+	background-color: #dad4c2;
+}
+.logo_desktop{
+	display: none;
+}
+.logo_mobile{
+	display: initial;
+	height:100px;
+	margin-left: 5px;
+}
+.triangle{
+	display: none;
+}
+.section_infos1,.section_infos2,.section_infos3,.section_infos4{
+	display: initial;
+}
+#bloc_header{
+	display: block;
+}
+#ville_dol {
+    width: 100%;
+    height: 334px;
+    background-size: cover;
+}
+#ville_dol h1{
+	top: 105px;
+	font-size: 26px;
+}
+#ville_dol h1::after{
+    width: 50px;
+}
+#ville_dol h1::before{
+    width: 50px;
+}
+#ville_dol p{
+	width: 380px;
+	top: 100px;
+	font-weight: 700;
+	font-size: 16px;
+}
+#container_nav ul {
+    top: -85px;
+    padding-top: 10px;
+    z-index: 5;
+    height: 422px;
+}
+#ville_dol .image_pagne {
+    bottom: -127px;
+
+}
+a.menu {
+    bottom: 60px;
+    z-index: 2;
+}
+#missions_banadol ul{
+	display: none;
+}
+.mission_inactive{
+	display: initial;
+}
+.section_infos1,.section_infos2,.section_infos3,.section_infos4, .ico_dev{
+	height: 80px;
+	margin: 14px;
+}	
+.section_infos1,.section_infos2,.section_infos3,.section_infos4{
+	display: flex;
+	width: 305px;
+	padding: 10px;
+	align-items: center;
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+    z-index: 1;
+}	
+.section_infos1,.section_infos2,.section_infos3,.section_infos4,>p{
+	margin-left: 20px;
+	width:170%;
+}
+#missions_banadol{
+	height: initial;
+}
+.image_missions {
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+.mission_inactive {
+    display: inline-block;
+}
+.mission_active {
+    display: inline-block;
+    width: 370px;
+}
+.mission_infos div h2{
+	width: 350px;
+	font-family: Quadrat;
+}
+.mission_infos>div>p{
+    width: 370px;
+    font-size: 18px;
+}
+.image_missions {
+    height: 280px;
+    margin-bottom: 20px;
+}
+#container_art {
+    margin-top: -40px;
+}
+#container_miss{
+width: 366px;
+font-family: Alief;
+}
+#container_miss p{
+	font-family: Alef;
+}
 }

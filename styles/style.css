@@ -416,18 +416,6 @@ article p{
 	margin:0 auto;
 	margin-top: 30px;
 }
-/*article .btn_articles{
-	margin-top: 35px;
-	font-family: Quadrat;
-	display: inline-block;
-	background-color: #cf4019;
-	color: #fff;
-	font-size: 12px;
-	border-radius: 30px;
-	padding: 15px;
-	text-decoration: none;
-	transition: 1s;
-}*/
 article .btn_articles:hover{
 	background: #00538e;
 }
@@ -693,11 +681,6 @@ a.menu:hover{
 #container_art{
 	height: 100%;
 }
-/*#container_art h3{
-	font-size: 22px;
-	margin: 20px;
-	bottom: -30px;
-}*/
 #container_art h3::before{
 	width: 70px;
 }
@@ -709,10 +692,6 @@ a.menu:hover{
 	margin-left: 28px;
 	margin-bottom: 40px;
 }
-/*article{
-	width: 30%px;
-	margin-top:45px;
-}*/
 article p{
 	width: 310px;
 	margin-top: 10px;
@@ -826,6 +805,10 @@ button.recherche_bas{
 	height: 300px;
 	margin: 0 auto;
 }
+div#reseaux_sociaux{
+	position: relative;
+	z-index: 1;
+}
 #ville_dol h1{
 	font-family: Quadrat;
 	color: #fff;
@@ -878,8 +861,7 @@ button.recherche_bas{
 	top: 107px;
     left: 150px;
 }	
-#missions_banadol ul{
-	display: flex;
+#missions_banadol ul.objectif{
 	justify-content: space-between;
 	width: 1200px;
 	height: 120px;
@@ -901,11 +883,12 @@ li.active-color{
 li.active-color .triangle{
 	display: inline-block;
 }
-.missions_banadol a{
+.missions_banadol a.icone{
 	display: flex;
 	text-decoration: none;
 	height: 175px;
 	margin-top: 23px;
+	margin-bottom: 0px;
 }
 .missions_banadol .ico_dev{
 	margin-left: 15px;
@@ -989,6 +972,7 @@ article{
 	text-align: center;
 	border-radius: 15px;
 	margin-top: 60px;
+	position: relative;
 }
 div.img_art1,div.img_art2,div.img_art3{
 	background-size: 100%;
@@ -1045,6 +1029,7 @@ article p{
 	font-size: 16px;
 	margin:0 auto;
 	margin-top: 30px;
+	position: relative;
 }
 article .btn_articles{
 	margin-top: 35px;
@@ -1057,10 +1042,18 @@ article .btn_articles{
 	padding: 15px;
 	text-decoration: none;
 	transition: 1s;
+	position: absolute;
+	bottom: -20px;
+	left: 38%;
 }
 article .btn_articles:hover{
 	background: #00538e;
 	
+}
+@media screen and (min-width: 641px){
+	#missions_banadol ul.objectif {
+    display: flex;
+}
 }
 @media screen and (max-width: 640px){
 	#body_missions{
@@ -1070,6 +1063,7 @@ article .btn_articles:hover{
 	header{
 	background-color: #dad4c2;
 }
+
 .logo_desktop{
 	display: none;
 }
@@ -1182,5 +1176,9 @@ font-family: Alief;
 }
 #container_miss p{
 	font-family: Alef;
+}
+article .btn_articles{
+	position: absolute;
+	left: 38%;
 }
 }

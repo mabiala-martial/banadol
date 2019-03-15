@@ -1,0 +1,225 @@
+#renseignements_perso{
+	position: relative;
+	top: 30px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 8px;
+}
+#renseignements_perso,#renseignements_famille,#autres_renseignements h1{
+	font-family: Quadrat;
+	color: #cf4019;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+#renseignements_perso ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+}
+#renseignements_perso li.champs h4{
+	font-family: Quadrat;
+	color: #7b6856;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.champs select.choisir{
+	height: 36px;
+}
+#renseignements_perso li input.prenom{
+	width: 340px;
+	margin-right: 20px;
+}
+#renseignements_perso li input{
+	width: 185px;
+	height: 30px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+#renseignements_perso li input.naissance{
+	width: 135px;
+}
+#renseignements_perso li input.profession{
+	width: 340px;
+}
+#renseignements_perso li input.phone{
+	width: 340px;
+}
+#renseignements_perso li input.mail{
+	width: 365px;
+}
+#renseignements_perso li .name{
+	width: 340px;
+}
+#renseignements_perso li input.departement{
+	width: 340px;
+}
+#renseignements_perso li input.pays{
+	width: 340px;
+}
+#renseignements_perso li input.adresse{
+	width: 340px;
+}
+#renseignements_famille{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 8px;
+}
+#renseignements_famille h4{
+	font-family: Quadrat;
+	color: #7b6856;
+	margin: 0;
+	margin-bottom: 10px;
+}
+#renseignements_famille>h4{
+	font-family: Quadrat;
+	color: #7b6856;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+#renseignements_famille div>h4.enfants{
+	font-family: Quadrat;
+	color: #cf4019;
+	width: 225px;
+    margin-top: 90px;
+    font-size: 22px;
+}
+#renseignements_famille input.number{
+	width: 135px;
+    height: 26px;
+}
+#renseignements_famille div ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+}
+#renseignements_famille div{
+	display: flex;
+}
+#renseignements_famille li input.naissance{
+	width: 135px;
+	height: 30px;
+	margin-right: 20px;
+}
+#renseignements_famille li input.name{
+	width: 340px;
+	height: 30px;
+	margin-right: 20px;
+}
+#renseignements_famille li input.prenom{
+	width: 340px;
+	height: 30px;
+	margin-right: 20px;
+}
+#renseignements_famille li input.departement{
+	width: 265px;
+	height: 30px;
+	margin-right: 20px;
+}
+#renseignements_famille li input.adresse{
+	width: 265px;
+	height: 30px;
+	margin-right: 20px;
+}
+#renseignements_famille li input{
+	width: 185px;
+	height: 30px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.separateur{
+	width: 1050px;
+	border: 2px solid #bab09f;
+	margin-left: 145px;
+}
+#autres_renseignements{
+	width: 80%;
+	margin: 0 auto;
+	padding: 8px;
+	position: relative;
+}
+#autres_renseignements li input.name{
+	width: 365px;
+	height: 30px;
+	margin-right: 20px;
+}
+#autres_renseignements li input.prenom{
+	width: 300px;
+	height: 30px;
+	margin-right: 20px;
+}
+#autres_renseignements div ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	position: relative;
+    left: 150px;
+    bottom: 126px;
+}
+#autres_renseignements div>h4.pere{
+	font-family: Quadrat;
+	color: #cf4019;
+	width: 225px;
+    margin-top: 70px;
+    font-size: 22px;
+}
+#autres_renseignements div h4.mere{
+	font-family: Quadrat;
+	color: #cf4019;
+	width: 225px;
+    margin-top: -70px;
+    font-size: 22px;
+}
+#autres_renseignements div h4.pere_adoptif{
+	font-family: Quadrat;
+	color: #cf4019;
+	width: 225px;
+    margin-top: -70px;
+    font-size: 22px;
+}
+#autres_renseignements li input.deces{
+	font-family: Quadrat;
+	color: #cf4019;
+	font-size: 22px;
+    position: relative;
+    height: 25px;
+    width: 25px;
+}
+#autres_renseignements div ul li.champs{
+	font-family: Quadrat;
+	color: #7b6856;
+	margin: 0;
+}
+#ville_dol .image_pagne{
+	margin-bottom: 50px;
+}
+.parent_decede{
+	position: relative;
+	top:48px;
+	left: 50px;
+	font-family: Quadrat;
+	color: #7b6856;
+}
+#autres_renseignements div p{
+	position: relative;
+	bottom: 115px;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-family: Quadrat;
+    color: #7b6856;
+}
+#autres_renseignements div .btn_formulaire{
+	width: 250px;
+	height: 50px;
+	border-radius: 30px;
+	background-color : #cf4019;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	font-size: 18px;
+}

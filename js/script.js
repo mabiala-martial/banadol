@@ -27,6 +27,5 @@ function showMissions(evt){
 	$('#missions_banadol li').on('click',function(){
 		$('#missions_banadol li').removeClass('active-color');
 		$(this).toggleClass('active-color');
-
 		return false;
 	});

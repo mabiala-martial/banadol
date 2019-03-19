@@ -83,10 +83,10 @@
 	font-family: Quadrat;
 	color: #cf4019;
 	width: 225px;
-    margin-top: 90px;
+    margin-top: 20px;
     font-size: 22px;
 }
-#renseignements_famille input.number{
+#renseignements_famille #nombre{
 	width: 135px;
     height: 26px;
 }
@@ -98,7 +98,13 @@
 	padding: 0;
 }
 #renseignements_famille div{
+	
 	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#renseignements_famille div ul{
+	margin-top: 20px;
 }
 #renseignements_famille li input.naissance{
 	width: 135px;
@@ -165,21 +171,27 @@
 	color: #cf4019;
 	width: 225px;
     margin-top: 70px;
-    font-size: 22px;
+    font-size: 20px;
+    position: relative;
+    bottom: 6px;
 }
 #autres_renseignements div h4.mere{
 	font-family: Quadrat;
 	color: #cf4019;
 	width: 225px;
     margin-top: -70px;
-    font-size: 22px;
+    font-size: 20px;
+    position: relative;
+    bottom: 6px;
 }
 #autres_renseignements div h4.pere_adoptif{
 	font-family: Quadrat;
 	color: #cf4019;
 	width: 225px;
     margin-top: -70px;
-    font-size: 22px;
+    font-size: 20px;
+    position: relative;
+    bottom: 8px;
 }
 #autres_renseignements li input.deces{
 	font-family: Quadrat;
@@ -212,7 +224,7 @@
     font-family: Quadrat;
     color: #7b6856;
 }
-#autres_renseignements div .btn_formulaire{
+#autres_renseignements div #btn_formulaire{
 	width: 250px;
 	height: 50px;
 	border-radius: 30px;
@@ -223,3 +235,107 @@
 	bottom: 50px;
 	font-size: 18px;
 }
+
+@media screen and (max-width: 640px){
+	#ville_dol .image_pagne{
+    margin-bottom: 0;
+	}
+	#renseignements_perso{
+		margin: 10px 0 0 10px;
+	}
+	#renseignements_perso div{
+		margin-top: -30px;
+	}
+	#renseignements_perso div ul{
+		margin-top: 20px;
+	}
+	#renseignements_perso li.champs h4 {
+    margin-top: 10px;
+    font-size: 16px;
+	}
+	#renseignements_perso div h1{
+		margin:auto;
+	}
+	#renseignements_perso div>h1{
+		text-align:center;
+		font-size: 17px;
+	}
+	#renseignements_famille{
+		margin: 10px 0 0 10px;
+	}
+	#renseignements_famille>h4{
+		font-size: 16px;
+	}
+	#renseignements_famille h1{
+		text-align:center;
+		font-size: 16px;
+	}
+	#autres_renseignements{
+	    margin-bottom: 80px;
+	}
+	#autres_renseignements>h1{
+		font-size: 16px;
+		width: 400px;
+	}
+	#autres_renseignements div #cont_pere{
+		display: flex;	
+		flex-direction: column;			
+		}
+	#autres_renseignements li input.prenom{
+	    width: 365px; 
+	    height: 30px;
+	    margin-right: 20px;
+		}
+	#autres_renseignements div>h4.pere{
+		position: static;
+		margin-top: 20px;
+		margin-left: -25px;	
+		} 
+	#autres_renseignements div h4.mere {
+		margin-top: -20px;	
+		position: static;
+   		margin-left: -25px;
+		}
+	#autres_renseignements li.champs h4{
+		margin-top: 20px;
+		margin-bottom: 10px;	
+		}
+	#autres_renseignements div ul{
+		position: static;	
+		display: flex;
+		flex-direction: column;	
+		margin-left: -25px;
+		margin-top: -25px;		
+		}
+	.parent_decede{
+		top:0;	
+		}
+	#autres_renseignements li input.deces {
+		margin-top:-20px;	
+		position:relative;
+    	top:-35px;
+		}
+	#autres_renseignements div p {
+		width: 378px;
+		display: flex;
+		text-align: justify;
+		bottom: 30px;
+		margin-top: 0px;
+		margin-left: -20px;	
+		}
+	#autres_renseignements div h4.pere_adoptif {
+       	margin-top: 0; 
+       	margin-top: 25px;
+    	margin-bottom: 12px
+    }		
+    #autres_renseignements li input.name {
+    	margin-bottom: 30px;
+		}	
+	#autres_renseignements div #btn_formulaire{
+		bottom: -15px;
+	}
+	/*#autres_renseignements div.cont_pere{
+		display: flex;
+		flex-direction: column-reverse;			
+	}*/
+} 
